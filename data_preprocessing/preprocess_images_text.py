@@ -54,6 +54,6 @@ def resize_images(filename, path_processed, target_size):
     df.to_pickle(path_processed)
 
 if __name__ == '__main__':
-    path_unprocessed = "/media/tjvsonsbeek/Data1/physionet.org/files/mimic-cxr-jpg/2.0.0/train_test_val_data_1904.pkl"
-    path_processed = "/media/tjvsonsbeek/Data1/physionet.org/files/mimic-cxr-jpg/2.0.0/train_test_val_data_1904_improved.pkl"
+    path_unprocessed = ".../files/mimic-cxr-jpg/2.0.0/train_test_val_data_1904.pkl"
+    path_processed = ".../files/mimic-cxr-jpg/2.0.0/train_test_val_data_1904_improved.pkl"
     resize_images(path_unprocessed, path_processed, target_size = (224,224))
